@@ -1,0 +1,13 @@
+.width {
+    width: 1000px;
+}
+
+.list-bg {
+    background-color: azure;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+.margin-top {
+    padding-top: 30px;
+}

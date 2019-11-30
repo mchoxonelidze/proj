@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+.width-80 {
+  width: 95%;
+  margin: auto;
+}
