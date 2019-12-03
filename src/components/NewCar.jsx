@@ -72,6 +72,7 @@ class NewCar extends React.Component {
                     placeholder="Enter VIN"
                     value={this.state.VIN}
                     onChange={this.handleInputChange}
+                    required= "true"
                 />
             </div>
             <div className="form-group">
@@ -84,15 +85,16 @@ class NewCar extends React.Component {
                     placeholder="სახელმწიფო ნომერი"
                     value={this.state.stateNum}
                     onChange={this.handleInputChange}
+                    required= "true"
                 />
 
             </div>
             <div className="form-group">
                 <label className="label-width" htmlFor="owner">მფლობელი</label>
+               
                 
-          <select value={this.state.value} onChange={this.handleChange}>
-           <option></option>
-           
+          <select  required= "true" value={this.state.value} onChange={this.handleChange}>
+          <option value={usersData.name}>{usersData.name}</option>
           </select>
        
             </div>
@@ -106,6 +108,7 @@ class NewCar extends React.Component {
                     placeholder="მარკა"
                     value={this.state.maker}
                     onChange={this.handleInputChange}
+                    
                 />
             </div>
             <div className="form-group">

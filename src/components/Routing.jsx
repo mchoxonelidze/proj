@@ -10,7 +10,6 @@ class Routing extends React.Component {
         return (
             <div>
                 <Switch>
-                 
                     <Route path='/users' component={Userspage} />
                     <Route path='/cars' component={Cars} />
                     <Route component={NotFound}/>

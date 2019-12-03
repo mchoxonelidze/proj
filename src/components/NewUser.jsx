@@ -70,8 +70,8 @@ class NewUser extends React.Component {
                     id="name"
                     placeholder="Enter name"
                     value={this.state.name}
-                    
                     onChange={this.handleInputChange}
+                    required= "true"
                 />
             </div>
             <div className="form-group">
@@ -84,6 +84,7 @@ class NewUser extends React.Component {
                     placeholder="lastName"
                     value={this.state.lastName}
                     onChange={this.handleInputChange}
+                    required= "true"
                 />
 
             </div>
@@ -97,6 +98,7 @@ class NewUser extends React.Component {
                     placeholder="idNum"
                     value={this.state.idNum}
                     onChange={this.handleInputChange}
+                    required= "true"
                 />
             </div>
             <div className="form-group">

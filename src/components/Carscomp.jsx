@@ -12,22 +12,22 @@ import '../css/uscars.css';
 let carsData = [
     {
         id: 1,
-        VIN: 'ragaca',
+        VIN: '1HBG2D3S2S5CSA',
         stateNum: '5156565',
-        owner: '{}',
-        maker: 'BMW',
-        model: 'raviiiciragaca',
+        owner: '',
+        maker: 'Nissan',
+        model: 'Skyline',
         color: 'red',
 
 
     },
     {
         id: 2,
-        VIN: 'aa',
+        VIN: '3SD5HLLKJC2',
         stateNum: '4587665',
-        owner: '{}',
+        owner: '',
         maker: 'BMW',
-        model: 'aagaca',
+        model: 'M8 cabriolet',
         color: 'blue',
     },
 ]
