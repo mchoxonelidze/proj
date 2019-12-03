@@ -1,13 +1,12 @@
 import React from 'react';
+import '../css/uscars.css';
+import Carscomp from '../components/Carscomp';
 
-
-
-function Cars() {
+function Carspage() {
     return (
-        <div className="formsdiv">
-            <h2>შეიყვანეთ მანქანის მონაცემები:</h2>
-            
-            <button>ADD</button>
+        <div className="width margin-top">
+           
+            <Carscomp/>
 
             
         </div>
@@ -15,4 +14,4 @@ function Cars() {
 }
 
 
-export default Cars;
+export default Carspage;

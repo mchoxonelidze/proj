@@ -11,3 +11,27 @@
 .margin-top {
     padding-top: 30px;
 }
+
+.margin-bott {
+    margin-bottom: 50px;
+}
+.label-width {
+    width: 20%;
+    color: aliceblue;
+    
+}
+
+.search-width {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    outline: 0;
+}
+.inputstyle{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    outline: 0;
+}

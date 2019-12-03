@@ -1,10 +1,12 @@
 import React from 'react'
+import '../css/uscars.css'
 
 class Search extends React.Component{
     render(){
         return <div>
-            <input type="text" className="form-control" onChange={this.props.onSearch}/>
-            <br />
+            
+            <input placeholder="ძიება" type="text" className=" search-width" onChange={this.props.onSearch}/>
+        
         </div>
     }
 }

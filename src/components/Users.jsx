@@ -7,7 +7,7 @@ class Users extends React.Component{
         return <div className="container" >
             {
                 data && data.map(user=>{
-                    return <User user={user}  onUserClick={onHandleClick}/>
+                    return <User key={user.id} user={user}  onUserClick={onHandleClick}/>
                 })
             }
         </div>
