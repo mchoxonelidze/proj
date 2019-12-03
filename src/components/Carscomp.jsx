@@ -3,6 +3,7 @@ import NewCar from './NewCar'
 import Search from './search'
 import Cars from './Cars'
 
+
 import '../css/uscars.css';
 
 
@@ -33,13 +34,24 @@ let carsData = [
 
 class Carscomp extends React.Component {
 
-    state = {
-        cars: carsData,
-        showForm: false,
-        car: {},
-        editMode: false
+    constructor(props) {
+        super(props)
+        this.state = {
+            isLoading: true,
+            cars: carsData,
+        }
     }
 
+    componentWillMount() {
+        localStorage.getItem('user') && this.setState({
+            user: JSON.parse(localStorage.getItem('user')),
+
+        })
+    }
+    componentWillUpdate(nextProps, nextState) {
+        localStorage.setItem('user', JSON.stringify(nextState))
+
+    }
     handleClick = (id) => {
         const { cars } = this.state
         const car = [...cars].find(x => x.id === id)

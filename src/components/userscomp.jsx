@@ -3,8 +3,9 @@ import NewUser from './NewUser'
 import Search from './search'
 import Users from './Users';
 
-import '../css/uscars.css';
 
+
+import '../css/uscars.css';
 
 
 
@@ -31,11 +32,30 @@ let usersData = [
 ]
 
 class Userscomp extends React.Component {
-
-    state = {
-        users: usersData,
+    constructor(props){
+        super(props)
+        this.state = {
+            
+            users: usersData,
+        }
     }
+   
+
+    componentWillMount(){
+        localStorage.getItem('user') && this.setState({
+            user: JSON.parse(localStorage.getItem('user')),
+            
+        })
+    }
+
     
+     
+     
+    componentWillUpdate(nextProps, nextState) {
+        localStorage.setItem('user', JSON.stringify(nextState))
+       
+    }
+
 
     handleClick = (id) => {
         const { users } = this.state
@@ -64,17 +84,9 @@ class Userscomp extends React.Component {
         this.setState({ users: usersData, showForm: false, })
     }
 
-  
-
-    // componentDidMount(){
-    //     JSON.parse(localStorage.getItem('user'));
-    // }
-
-    // componentWillUpdate(nextProps, nextState){
-    //     localStorage.setItem('user', JSON.stringify(nextState))
-    // }
 
    
+
 
 
     handleGoBack = () => {

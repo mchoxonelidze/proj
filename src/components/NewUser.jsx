@@ -37,13 +37,13 @@ class NewUser extends React.Component {
     //     ev.preventDefault();
     //     localStorage.setItem("formData", JSON.stringify(values));
     // }
-   
+  
+
     
 
 
     static getDerivedStateFromProps(props, state) {
-        console.log(props)
-        console.log(state)
+        
         if (props.editMode && props.user.id !== state.id) {
             return props.user
         }

@@ -1,4 +1,5 @@
 import React from 'react'
+import usersData from './userscomp'
 
 
 
@@ -23,13 +24,17 @@ class NewCar extends React.Component {
         color: ''
     }
 
+    componentDidMount() {
+        if (this.props.authToken) {
+          usersData(this.props.authToken);
+        }
+      }
+    
+
     handleInputChange = (event) => {
         const { name, value } = event.target
         this.setState({ [name]: value })
     }
-
-
-
 
     saveCar = (event) => {
         event.preventDefault()
