@@ -72,7 +72,7 @@ class NewCar extends React.Component {
                     placeholder="Enter VIN"
                     value={this.state.VIN}
                     onChange={this.handleInputChange}
-                    required= "true"
+                    required= {true}
                 />
             </div>
             <div className="form-group">
@@ -85,7 +85,7 @@ class NewCar extends React.Component {
                     placeholder="სახელმწიფო ნომერი"
                     value={this.state.stateNum}
                     onChange={this.handleInputChange}
-                    required= "true"
+                    required= {true}
                 />
 
             </div>
